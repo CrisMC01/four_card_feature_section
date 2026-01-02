@@ -1,4 +1,6 @@
 /* CSS Reset and Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,8 +24,6 @@
     --font-weight-regular: 400;
     --font-weight-semibold: 600;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 body {
     font-family: var(--font-family);
@@ -76,7 +76,7 @@ body {
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     gap: 2rem;
     max-width: 1110px;
     margin: 0 auto;
@@ -142,7 +142,7 @@ body {
 /* Tablet Styles */
 @media (max-width: 1024px) {
     .header__title {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     
     .cards {
@@ -201,12 +201,6 @@ body {
     
     .card {
         padding: 1.75rem;
-    }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-    .header__title {
-        font-size: 2rem;
     }
 }
 
